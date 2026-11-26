@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valley Run — a little flight game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0c1a28;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    display: block;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    image-rendering: auto;
+    background: #7fb6e8;
+  }
+  #errlog {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: #f66;
+    font: 10px monospace;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<div id="errlog"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
